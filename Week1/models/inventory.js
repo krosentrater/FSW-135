@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Schema = moongoose.Schema;
+const Schema = mongoose.Schema;
 
 //Inventory Schema
 const inventorySchema = new Schema ({
