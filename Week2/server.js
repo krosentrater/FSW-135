@@ -9,18 +9,11 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 //Connection to DB
-mongoose.connect("mongodb://localhost:27017/e-commerce",
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-    },
-    () => console.log("Successfully connected to database!")
-);
+mongoose.connect('mongodb://localhost:27017/e-commerce');
 
 //Routes
 app.use('/inventory', require('./routes/inventoryRouter.js'));
+
 
 //Error Handler
 app.use((err, req, res, next) => {
