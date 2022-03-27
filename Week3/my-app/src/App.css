@@ -61,3 +61,43 @@
     padding: 8px;
     border-radius: 4px;
 }
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.profile-wrapper > form {
+    border: 1px solid #3339;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-wrapper > h1 {
+    font-size: 2.5em;
+    margin: 24px;
+}
+
+.profile-wrapper > h3 {
+    font-size: 1.5em;
+    margin: 24px;
+}
+
+.issues > h1 {
+    font-size: 2em;
+    padding: 5px
+}
+
+.issues > h3 {
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px;
+}
